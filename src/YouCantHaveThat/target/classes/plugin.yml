@@ -1,0 +1,20 @@
+name: YouCantHaveThat
+version: '1.0.5'
+main: me.cutzuu.YouCantHaveThat.main
+api-version: '26.2'
+
+
+commands:
+  reloadconfig:
+    description: Reload the plugin config
+    usage: /youcanthavethat <subcommand>
+    aliases: [ youcanthavethat, ycht, youcanthave ]
+    permission: youcanthavethat.reload
+
+permissions:
+  youcanthavethat.bypass:
+    description: Allows user to bypass Bad Item Checks.
+    default: op
+  youcanthavethat.reload:
+    description: Allows user to reload YouCantHaveThat.
+    default: op
