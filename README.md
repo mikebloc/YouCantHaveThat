@@ -3,7 +3,7 @@
 
 Drop a ⭐ to support and stay up to date!
 - Consider [donating!](https://ko-fi.com/mikebloc)
-- Download [here!](https://modrinth.com/mikebloc/youcanthavethat)
+- Download [here!](https://modrinth.com/youcanthavethat)
 
 ## Features
 - Prevents obtaining / breaking / placing.
