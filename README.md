@@ -11,4 +11,4 @@ Drop a ⭐ to support and stay up to date!
 - Detects offhand.
 - Lightweight. Operates completely through player actions.
 
-[All rights reserved. Mike Bloc](https://github.com/mikebloc/.github/tree/main/documentation)
+[All rights reserved. Mike Bloc](https://github.com/mikebloc/.github/tree/main/documentation/legal.md)
