@@ -16,7 +16,6 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.*;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -58,7 +57,7 @@ public final class main extends JavaPlugin implements Listener
         public static boolean configToggleStoragePurge;
     }
 
-    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args)
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
     {
         if (args.length == 0)
         {
@@ -175,7 +174,7 @@ public final class main extends JavaPlugin implements Listener
     @EventHandler
     public void inventoryCheck2 (EntityPickupItemEvent e)
     {
-        @NotNull Entity entity = e.getEntity();
+        Entity entity = e.getEntity();
         if (entity instanceof Player)
         {
             Player player = (Player) e.getEntity();
@@ -184,7 +183,7 @@ public final class main extends JavaPlugin implements Listener
                 Item item = e.getItem();
                 PlayerInventory inventory = player.getInventory();
                 ItemStack secondHand = inventory.getItemInOffHand();
-                @NotNull Material material = e.getItem().getItemStack().getType();
+                Material material = e.getItem().getItemStack().getType();
 
                 if (blockedItems.contains(material)) e.setCancelled(true); item.remove(); checkInventoryProcess(inventory, secondHand);
             }
@@ -203,7 +202,7 @@ public final class main extends JavaPlugin implements Listener
 
                 // PatchFix - Item Removal happens so quickly that it forgets to remove the remaining stack.
                 // This runs it again 2 seconds after the first time.
-                getServer().getScheduler().runTaskLater(this, task -> {inventory.remove(item.getType());}, 40L); // 20 ticks = 1 second
+                getServer().getScheduler().runTaskLater(this, () -> inventory.remove(item.getType()), 40L); // 20 ticks = 1 second
             }
         }
         // Also checks offhand in case the fucker tried to be smart.
