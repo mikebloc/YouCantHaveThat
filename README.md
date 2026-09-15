@@ -1,5 +1,5 @@
-
-> Prevents obtaining/breaking any item of your choice.
+# 1.12 Branch
+> Legacy support. Has only been tested for 1.12.2 but should be compatible with 1.12.x
 
 Drop a ⭐ to support and stay up to date!
 - Consider [donating!](https://ko-fi.com/mikebloc)
