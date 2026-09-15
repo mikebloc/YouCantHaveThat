@@ -1,5 +1,5 @@
-
-> Prevents obtaining/breaking any item of your choice.
+1.16.5(LTS) Branch
+> Built on 1.16.5 API but supports 1.16 to 26.3
 
 Drop a ⭐ to support and stay up to date!
 - Consider [donating!](https://ko-fi.com/mikebloc)
